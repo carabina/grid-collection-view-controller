@@ -8,14 +8,14 @@
 
 import UIKit
 
-class CenterAlignedFlowLayout: UICollectionViewFlowLayout {
+open class CenterAlignedFlowLayout: UICollectionViewFlowLayout {
 
-	override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+	override open func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
 		let attributes = super.layoutAttributesForElements(in: rect)
 
 		// Constants
 		let leftPadding: CGFloat = 8
-		let interItemSpacing: CGFloat = 5
+		let interItemSpacing: CGFloat = 0
 
 		// Tracked values
 		var leftMargin: CGFloat = leftPadding // Modified to determine origin.x for each item

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol GridCollectionViewControllerDelegate: UICollectionViewDelegateFlowLayout {
+public protocol GridCollectionViewControllerDelegate: UICollectionViewDelegateFlowLayout {
 	/**
 	Must Returns the size of the loading Cell
 	**/
@@ -31,7 +31,7 @@ protocol GridCollectionViewControllerDelegate: UICollectionViewDelegateFlowLayou
 	func numberOfItemPerRow(_ collectionView: UICollectionView) -> CGFloat
 }
 
-protocol GridCollectionViewControllerDataSource: UICollectionViewDataSource {
+public protocol GridCollectionViewControllerDataSource: UICollectionViewDataSource {
 	/**
 	Return the number of items that will be displayed before reloading
 	**/
@@ -48,9 +48,9 @@ protocol GridCollectionViewControllerDataSource: UICollectionViewDataSource {
 	func controller(_ controller: GridCollectionViewController, loadingCellAt indexPath: IndexPath) -> UICollectionViewCell
 }
 
-class GridCollectionViewController: UICollectionViewController {
-	fileprivate(set) var loading  = true
-	fileprivate(set) var fetching = false
+open class GridCollectionViewController: UICollectionViewController {
+	public fileprivate(set) var loading  = true
+	public fileprivate(set) var fetching = false
 
 	fileprivate var collectionViewDelegateProxy: CollectionViewDelegateProxy
 	fileprivate var collectionViewDataSourceProxy: CollectionViewDataSourceProxy
@@ -89,11 +89,11 @@ class GridCollectionViewController: UICollectionViewController {
 		}
 	}
 
-	convenience init() {
+	convenience public init() {
 		self.init(nibName: nil, bundle:nil)
 	}
 
-	override init(nibName: String?, bundle: Bundle?) {
+	override public init(nibName: String?, bundle: Bundle?) {
 		collectionViewDelegateProxy		= CollectionViewDelegateProxy()
 		collectionViewDataSourceProxy	= CollectionViewDataSourceProxy()
 		super.init(nibName: nibName, bundle: bundle)
@@ -101,11 +101,11 @@ class GridCollectionViewController: UICollectionViewController {
 		collectionViewDataSourceProxy.collectionController = self
 	}
 
-	required init?(coder aDecoder: NSCoder) {
+	required public init?(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
 
-	public override func loadView() {
+	open override func loadView() {
 		guard self.nibName == nil else {
 			return super.loadView()
 		}
@@ -156,15 +156,6 @@ private class CollectionViewDataSourceProxy: NSObject, UICollectionViewDataSourc
 		return self.collectionController.dataSource!.collectionView(collectionView, cellForItemAt: indexPath)
 	}
 
-	func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-		self.collectionController.delegate?.collectionView?(collectionView, willDisplay: cell, forItemAt: indexPath)
-		let count =  self.collectionController.dataSource?.collectionView(collectionView, numberOfItemsInSection: indexPath.section) ?? 0
-
-		guard indexPath.row == count else {
-			return
-		}
-	}
-
 	fileprivate override func responds(to aSelector: Selector!) -> Bool {
 		if super.responds(to: aSelector) {
 			return true
@@ -201,21 +192,15 @@ private class CollectionViewDelegateProxy: NSObject, UICollectionViewDelegateFlo
 			return self.collectionController.delegate!.loadingCellSize(collectionView: collectionView)
 		}
 
-		let width  = collectionView.frame.size.width / self.collectionController.delegate!.numberOfItemPerRow(collectionView)
+		guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
+			fatalError("unhandlded layout")
+		}
+
+		let itemPerRow = self.collectionController.delegate!.numberOfItemPerRow(collectionView)
+		let baseWidth = (collectionView.frame.width - layout.sectionInset.left - layout.sectionInset.right - (layout.minimumInteritemSpacing * itemPerRow - 1) - collectionView.contentInset.left - collectionView.contentInset.right)
+		let width  =  baseWidth / itemPerRow
 		let height = self.collectionController.delegate!.heightForItemAtIndexPath(collectionView, indexPath: indexPath)
 		return CGSize(width: width, height: height)
-	}
-	// Flow layout delegate
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-		return UIEdgeInsets()
-	}
-
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-		return 0
-	}
-
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-		return 0
 	}
 
 	func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
@@ -261,7 +246,7 @@ private class CollectionViewDelegateProxy: NSObject, UICollectionViewDelegateFlo
 		if self.collectionController.responds(to: aSelector) {
 			return self.collectionController
 		}
-
+		
 		return nil
 	}
 }

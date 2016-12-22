@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LoadingItemCell" id="gTV-IL-0wX" customClass="LoadingItemCell" customModule="PaginableTableView" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LoadingItemCell" id="gTV-IL-0wX" customClass="LoadingItemCell" customModule="GridCollectionViewControllerSample" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="189" height="105"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -24,7 +24,6 @@
                     </activityIndicatorView>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="0.196931671" green="0.196931671" blue="0.196931671" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="FLq-bY-Izz" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="770-wA-EPt"/>
                 <constraint firstItem="FLq-bY-Izz" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="VMb-iz-tQb"/>

@@ -16,12 +16,12 @@ extension UICollectionViewLayoutAttributes {
 	}
 }
 
-class LeftAlignedFlowLayout: UICollectionViewFlowLayout {
+open class LeftAlignedFlowLayout: UICollectionViewFlowLayout {
 	/**
 	Uses the same layout processing than layoutAttributesForItemAtIndexPath:
 	Just copying each properties to the generated layout attributes from the super class "FlowLayout"
 	**/
-	override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+	override open func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
 		let originalAttributes = super.layoutAttributesForElements(in: rect)!
 		var updatedAttributes = Array(originalAttributes)
 
@@ -41,7 +41,7 @@ class LeftAlignedFlowLayout: UICollectionViewFlowLayout {
 	Position the items to left even if the row is not completely filled.
 	Take into account the interspacing and the section insest.
 	**/
-	override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+	override open func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
 		guard let currentItemAttributes: UICollectionViewLayoutAttributes = super.layoutAttributesForItem(at: indexPath)?.copy(with: nil) as? UICollectionViewLayoutAttributes else {
 			fatalError("Unhandled error")
 		}

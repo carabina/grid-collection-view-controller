@@ -57,7 +57,7 @@ extension User {
 
 extension User {
 	static func stub(from: Int, with count: Int) -> [User] {
-		let start = min(from, self.list.count)
+		let start = min(from, self.list.count - 2)
 		let end = min(from+count, self.list.count - 1)
 
 		return Array(self.list[start...end])

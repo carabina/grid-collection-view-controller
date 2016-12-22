@@ -7,15 +7,15 @@
 //
 
 import UIKit
+import GridCollectionViewController
 
 class SimpleViewController: UIViewController {
-	@IBOutlet weak var containerView: UIView!
-
 	var collectionController: GridCollectionViewController!
 	var data: [String: [User]] = ["users": []]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+		self.title = "Demo"
 		NotificationCenter.default.addObserver(self, selector: #selector(self.deviceRotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
 
 		self.collectionController = GridCollectionViewController()
@@ -25,6 +25,7 @@ class SimpleViewController: UIViewController {
 		self.collectionController.delegate = self
 		self.collectionController.dataSource = self
 		self.collectionController.paginationEnabled = true
+		self.collectionController.view.frame = self.view.bounds
 		self.view.addSubview(self.collectionController.view)
     }
 
@@ -39,17 +40,32 @@ class SimpleViewController: UIViewController {
 }
 
 extension  SimpleViewController: GridCollectionViewControllerDataSource, GridCollectionViewControllerDelegate {
-	// MARK: PaginableViewController Delegate
+	// MARK: Flow Layout
+	// Flow layout delegate
+	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+		return UIEdgeInsets()
+	}
+
+	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+		return 15
+	}
+
+	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+		return 15
+	}
+
+	// MARK: PaginableViewController DelegatE
+
 	func numberOfItemPerRow(_ collectionView: UICollectionView) -> CGFloat {
 		return 5
 	}
 
 	func heightForItemAtIndexPath(_ collectionView: UICollectionView, indexPath: IndexPath) -> CGFloat {
-		return 100
+		return 200
 	}
 
 	func loadingCellSize(collectionView: UICollectionView) -> CGSize {
-		return CGSize(width: collectionView.frame.size.width/5, height: 50)
+		return CGSize(width: collectionView.frame.size.width/5, height: 100)
 	}
 
 	func shouldHideLoadingCellWhenNothingToLoad() -> Bool {

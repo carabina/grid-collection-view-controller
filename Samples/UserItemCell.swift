@@ -23,8 +23,5 @@ class UserItemCell: UICollectionViewCell {
 	func set(user: User) {
 		self.nameLabel.text = "\(indexPath!.row)"
 		self.companyLabel.text = user.company
-
-		self.nameLabel.layer.borderColor = UIColor.black.cgColor
-		self.nameLabel.layer.borderWidth = 0.5
 	}
 }
