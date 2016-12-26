@@ -13,27 +13,27 @@ class SimpleViewController: UIViewController {
 	var collectionController: DGGridCollectionViewController!
 	var data: [String: [User]] = ["users": []]
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		self.title = "Demo"
 		NotificationCenter.default.addObserver(self, selector: #selector(self.deviceRotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
 
 		self.collectionController = DGGridCollectionViewController()
 		self.collectionController.register(UINib(nibName:String(describing:LoadingItemCell.self), bundle: Bundle.main), forCellWithReuseIdentifier: LoadingItemCell.Identifier)
 		self.collectionController.register(UINib(nibName:String(describing:UserItemCell.self), bundle: Bundle.main), forCellWithReuseIdentifier: UserItemCell.Identifier)
-		self.collectionController.setCollectionViewLayout(CenterAlignedFlowLayout(), animated: true)
+		self.collectionController.setCollectionViewLayout(DGCenterAlignedFlowLayout(), animated: true)
 		self.collectionController.delegate = self
 		self.collectionController.dataSource = self
 		self.collectionController.paginationEnabled = true
 		self.collectionController.view.frame = self.view.bounds
 		self.view.addSubview(self.collectionController.view)
-    }
+	}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-	
+	override func didReceiveMemoryWarning() {
+		super.didReceiveMemoryWarning()
+		// Dispose of any resources that can be recreated.
+	}
+
 	func deviceRotated() {
 		self.collectionController.collectionView?.reloadData()
 	}
@@ -43,29 +43,30 @@ extension  SimpleViewController: DGGridCollectionViewControllerDataSource, DGGri
 	// MARK: Flow Layout
 	// Flow layout delegate
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-		return UIEdgeInsets()
+//		return UIEdgeInsets()
+				return UIEdgeInsets(top: 10, left: 10, bottom: 0, right: 10)
 	}
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-		return 15
+		return 10
 	}
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-		return 15
+		return 10
 	}
 
 	// MARK: PaginableViewController DelegatE
 
 	func numberOfItemPerRow(_ collectionView: UICollectionView) -> CGFloat {
-		return 5
+		return 3
 	}
 
 	func heightForItemAtIndexPath(_ collectionView: UICollectionView, indexPath: IndexPath) -> CGFloat {
-		return 200
+		return 100
 	}
 
 	func loadingCellSize(collectionView: UICollectionView) -> CGSize {
-		return CGSize(width: collectionView.frame.size.width/5, height: 100)
+		return CGSize(width: collectionView.frame.size.width, height: 100)
 	}
 
 	func shouldHideLoadingCellWhenNothingToLoad() -> Bool {

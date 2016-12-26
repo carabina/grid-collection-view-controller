@@ -8,22 +8,26 @@
 
 import UIKit
 
-open class CenterAlignedFlowLayout: UICollectionViewFlowLayout {
+open class DGCenterAlignedFlowLayout: UICollectionViewFlowLayout {
 
 	override open func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
 		let attributes = super.layoutAttributesForElements(in: rect)
 
-		// Constants
-		let leftPadding: CGFloat = 8
-		let interItemSpacing: CGFloat = 0
-
 		// Tracked values
+		var leftPadding: CGFloat = 0
+		var interItemSpacing: CGFloat = 0
+
 		var leftMargin: CGFloat = leftPadding // Modified to determine origin.x for each item
 		var maxY: CGFloat = -1.0 // Modified to determine origin.y for each item
 		var rowSizes: [[CGFloat]] = [] // Tracks the starting and ending x-values for the first and last item in the row
 		var currentRow: Int = 0 // Tracks the current row
 
 		attributes?.forEach { layoutAttribute in
+			let indexPath = layoutAttribute.indexPath
+			let delegate: UICollectionViewDelegateFlowLayout? = self.collectionView?.delegate as? UICollectionViewDelegateFlowLayout
+
+			leftPadding = delegate?.collectionView?(self.collectionView!, layout: self, insetForSectionAt: indexPath.section).left ?? 0
+			interItemSpacing = delegate?.collectionView?(self.collectionView!, layout: self, minimumInteritemSpacingForSectionAt: indexPath.section) ?? 0
 
 			// Each layoutAttribute represents its own item
 			if layoutAttribute.frame.origin.y >= maxY {

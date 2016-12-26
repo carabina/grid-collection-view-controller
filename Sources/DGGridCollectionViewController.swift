@@ -197,7 +197,16 @@ private class CollectionViewDelegateProxy: NSObject, UICollectionViewDelegateFlo
 		}
 
 		let itemPerRow = self.collectionController.delegate!.numberOfItemPerRow(collectionView)
-		let baseWidth = (collectionView.frame.width - layout.sectionInset.left - layout.sectionInset.right - (layout.minimumInteritemSpacing * itemPerRow - 1) - collectionView.contentInset.left - collectionView.contentInset.right)
+		var sectionInset = UIEdgeInsets()
+		var minimumInteritemSpacing: CGFloat = 0.0
+
+		if let delegate = collectionView.delegate as? UICollectionViewDelegateFlowLayout {
+			sectionInset = delegate.collectionView?(collectionView, layout: layout, insetForSectionAt: indexPath.section) ?? UIEdgeInsets()
+			minimumInteritemSpacing = delegate.collectionView?(collectionView, layout: layout, minimumInteritemSpacingForSectionAt: indexPath.section) ?? 0
+		}
+
+		let baseWidth = (collectionView.frame.width - sectionInset.left - sectionInset.right - (minimumInteritemSpacing * itemPerRow))
+
 		let width  =  baseWidth / itemPerRow
 		let height = self.collectionController.delegate!.heightForItemAtIndexPath(collectionView, indexPath: indexPath)
 		return CGSize(width: width, height: height)

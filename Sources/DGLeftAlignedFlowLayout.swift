@@ -16,7 +16,7 @@ extension UICollectionViewLayoutAttributes {
 	}
 }
 
-open class LeftAlignedFlowLayout: UICollectionViewFlowLayout {
+open class DGLeftAlignedFlowLayout: UICollectionViewFlowLayout {
 	/**
 	Uses the same layout processing than layoutAttributesForItemAtIndexPath:
 	Just copying each properties to the generated layout attributes from the super class "FlowLayout"

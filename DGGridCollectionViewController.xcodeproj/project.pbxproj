@@ -167,9 +167,8 @@
 		A3169DCA1DE0629100BABAFD /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				AE2E4F691E1123C8002DB2F2 /* DGCenterAlignedFlowLayout.swift */,
+				AE2E4FBB1E113F9D002DB2F2 /* Layouts */,
 				AE2E4F6A1E1123C8002DB2F2 /* DGGridCollectionViewController.swift */,
-				AE2E4F6B1E1123C8002DB2F2 /* DGLeftAlignedFlowLayout.swift */,
 				A3169E751DE083D900BABAFD /* DGGridCollectionViewController.h */,
 				A3169DCC1DE0629100BABAFD /* Info.plist */,
 			);
@@ -191,6 +190,15 @@
 				A38EF2C71DECF97000637484 /* DGGridCollectionViewControllerTests.swift */,
 			);
 			path = DGGridCollectionViewControllerTests;
+			sourceTree = "<group>";
+		};
+		AE2E4FBB1E113F9D002DB2F2 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				AE2E4F691E1123C8002DB2F2 /* DGCenterAlignedFlowLayout.swift */,
+				AE2E4F6B1E1123C8002DB2F2 /* DGLeftAlignedFlowLayout.swift */,
+			);
+			name = Layouts;
 			sourceTree = "<group>";
 		};
 		BE2EFA0474240A2BD4740F2C /* Frameworks */ = {
