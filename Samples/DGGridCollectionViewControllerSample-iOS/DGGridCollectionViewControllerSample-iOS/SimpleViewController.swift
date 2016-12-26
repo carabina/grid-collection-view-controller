@@ -57,7 +57,7 @@ extension  SimpleViewController: DGGridCollectionViewControllerDataSource, DGGri
 
 	// MARK: PaginableViewController DelegatE
 
-	func numberOfItemPerRow(_ collectionView: UICollectionView) -> CGFloat {
+	func numberOfItemPerRow(_ collectionView: UICollectionView) -> Int {
 		return 3
 	}
 

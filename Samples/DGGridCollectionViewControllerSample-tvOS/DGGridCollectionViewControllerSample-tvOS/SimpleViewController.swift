@@ -17,13 +17,14 @@ class SimpleViewController: UIViewController {
         super.viewDidLoad()
 		self.title = "Demo"
 
-		self.collectionController = DGGridCollectionViewController(with: self.view.bounds)
+		self.collectionController = DGGridCollectionViewController()
 		self.collectionController.register(UINib(nibName:String(describing:LoadingItemCell.self), bundle: Bundle.main), forCellWithReuseIdentifier: LoadingItemCell.Identifier)
 		self.collectionController.register(UINib(nibName:String(describing:UserItemCell.self), bundle: Bundle.main), forCellWithReuseIdentifier: UserItemCell.Identifier)
 		self.collectionController.setCollectionViewLayout(DGCenterAlignedFlowLayout(), animated: true)
 		self.collectionController.delegate = self
 		self.collectionController.dataSource = self
 		self.collectionController.paginationEnabled = true
+        self.collectionController.view?.frame = self.view.bounds
 		self.collectionController.collectionView?.backgroundColor = UIColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0)
 		self.view.addSubview(self.collectionController.view)
     }
@@ -52,8 +53,8 @@ extension  SimpleViewController: DGGridCollectionViewControllerDataSource, DGGri
 
 	// MARK: PaginableViewController DelegatE
 
-	func numberOfItemPerRow(_ collectionView: UICollectionView) -> CGFloat {
-		return 1
+	func numberOfItemPerRow(_ collectionView: UICollectionView) -> Int {
+		return 10
 	}
 
 	func heightForItemAtIndexPath(_ collectionView: UICollectionView, indexPath: IndexPath) -> CGFloat {

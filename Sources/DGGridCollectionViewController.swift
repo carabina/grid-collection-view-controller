@@ -28,7 +28,7 @@ public protocol DGGridCollectionViewControllerDelegate: UICollectionViewDelegate
 	/**
 	Gives the same width for each items
 	**/
-	func numberOfItemPerRow(_ collectionView: UICollectionView) -> CGFloat
+	func numberOfItemPerRow(_ collectionView: UICollectionView) -> Int
 }
 
 public protocol DGGridCollectionViewControllerDataSource: UICollectionViewDataSource {
@@ -196,7 +196,7 @@ private class CollectionViewDelegateProxy: NSObject, UICollectionViewDelegateFlo
 			fatalError("unhandlded layout")
 		}
 
-		let itemPerRow = self.collectionController.delegate!.numberOfItemPerRow(collectionView)
+		let itemPerRow = CGFloat(self.collectionController.delegate!.numberOfItemPerRow(collectionView))
 		var sectionInset = UIEdgeInsets()
 		var minimumInteritemSpacing: CGFloat = 0.0
 

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9EC24C2B3D06B4CDA1D36CE7 /* Pods_DGGridCollectionViewControllerSample_DGGridCollectionViewControllerSample_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F04D0709DA0D6A2D69C509 /* Pods_DGGridCollectionViewControllerSample_DGGridCollectionViewControllerSample_tvOS.framework */; };
+		2FA59DE7C10A6CD4B69B9117 /* Pods_Samples_DGGridCollectionViewControllerSample_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABC2472330278A02F685A34 /* Pods_Samples_DGGridCollectionViewControllerSample_tvOS.framework */; };
 		A30D64901E0D7B2A00A3CE45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D648F1E0D7B2A00A3CE45 /* AppDelegate.swift */; };
 		A30D64971E0D7B2A00A3CE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30D64961E0D7B2A00A3CE45 /* Assets.xcassets */; };
 		A30D649F1E0D7BA200A3CE45 /* DGGridCollectionViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30D649E1E0D7BA200A3CE45 /* DGGridCollectionViewController.framework */; };
@@ -38,9 +38,11 @@
 /* Begin PBXFileReference section */
 		066D1A22246FF0D2CA34D179 /* Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS/Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		37F6C77DDB9960488AEFDF89 /* Pods-DGGridCollectionViewControllerSample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGGridCollectionViewControllerSample-tvOS.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-DGGridCollectionViewControllerSample-tvOS/Pods-DGGridCollectionViewControllerSample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		823325F1FA8EDC364890E48E /* Pods-Samples-DGGridCollectionViewControllerSample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Samples-DGGridCollectionViewControllerSample-tvOS.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-Samples-DGGridCollectionViewControllerSample-tvOS/Pods-Samples-DGGridCollectionViewControllerSample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		834A6462DDEA44C90F6C4159 /* Pods-DGGridCollectionViewControllerSample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGGridCollectionViewControllerSample-tvOS.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-DGGridCollectionViewControllerSample-tvOS/Pods-DGGridCollectionViewControllerSample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		86F04D0709DA0D6A2D69C509 /* Pods_DGGridCollectionViewControllerSample_DGGridCollectionViewControllerSample_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DGGridCollectionViewControllerSample_DGGridCollectionViewControllerSample_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5D11F835CD3CA7BB6F03DF /* Pods_DGGridCollectionViewControllerSample_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DGGridCollectionViewControllerSample_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		910DAD34FB670175ADFEF8EF /* Pods-Samples-DGGridCollectionViewControllerSample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Samples-DGGridCollectionViewControllerSample-tvOS.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Samples-DGGridCollectionViewControllerSample-tvOS/Pods-Samples-DGGridCollectionViewControllerSample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		A30D648C1E0D7B2A00A3CE45 /* DGGridCollectionViewControllerSample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DGGridCollectionViewControllerSample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30D648F1E0D7B2A00A3CE45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A30D64961E0D7B2A00A3CE45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		AE2E4FB71E112EF8002DB2F2 /* LoadingItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingItemCell.xib; sourceTree = "<group>"; };
 		AE2E4FB91E112F5E002DB2F2 /* UserItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserItemCell.xib; sourceTree = "<group>"; };
 		B59EBA76E4EE0948B3D0809A /* Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS/Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		BABC2472330278A02F685A34 /* Pods_Samples_DGGridCollectionViewControllerSample_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Samples_DGGridCollectionViewControllerSample_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A30D649F1E0D7BA200A3CE45 /* DGGridCollectionViewController.framework in Frameworks */,
-				9EC24C2B3D06B4CDA1D36CE7 /* Pods_DGGridCollectionViewControllerSample_DGGridCollectionViewControllerSample_tvOS.framework in Frameworks */,
+				2FA59DE7C10A6CD4B69B9117 /* Pods_Samples_DGGridCollectionViewControllerSample_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +79,8 @@
 				834A6462DDEA44C90F6C4159 /* Pods-DGGridCollectionViewControllerSample-tvOS.release.xcconfig */,
 				066D1A22246FF0D2CA34D179 /* Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS.debug.xcconfig */,
 				B59EBA76E4EE0948B3D0809A /* Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS.release.xcconfig */,
+				823325F1FA8EDC364890E48E /* Pods-Samples-DGGridCollectionViewControllerSample-tvOS.debug.xcconfig */,
+				910DAD34FB670175ADFEF8EF /* Pods-Samples-DGGridCollectionViewControllerSample-tvOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 				A30D649E1E0D7BA200A3CE45 /* DGGridCollectionViewController.framework */,
 				8D5D11F835CD3CA7BB6F03DF /* Pods_DGGridCollectionViewControllerSample_tvOS.framework */,
 				86F04D0709DA0D6A2D69C509 /* Pods_DGGridCollectionViewControllerSample_DGGridCollectionViewControllerSample_tvOS.framework */,
+				BABC2472330278A02F685A34 /* Pods_Samples_DGGridCollectionViewControllerSample_tvOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -235,7 +241,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS/Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-Samples-DGGridCollectionViewControllerSample-tvOS/Pods-Samples-DGGridCollectionViewControllerSample-tvOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7A423DABB450FAAD99D572FF /* [CP] Copy Pods Resources */ = {
@@ -250,7 +256,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS/Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-Samples-DGGridCollectionViewControllerSample-tvOS/Pods-Samples-DGGridCollectionViewControllerSample-tvOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C9C3C7D7C59B1AB10EA77253 /* [CP] Check Pods Manifest.lock */ = {
@@ -383,7 +389,7 @@
 		};
 		A30D649C1E0D7B2A00A3CE45 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 066D1A22246FF0D2CA34D179 /* Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 823325F1FA8EDC364890E48E /* Pods-Samples-DGGridCollectionViewControllerSample-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -399,7 +405,7 @@
 		};
 		A30D649D1E0D7B2A00A3CE45 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B59EBA76E4EE0948B3D0809A /* Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-tvOS.release.xcconfig */;
+			baseConfigurationReference = 910DAD34FB670175ADFEF8EF /* Pods-Samples-DGGridCollectionViewControllerSample-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

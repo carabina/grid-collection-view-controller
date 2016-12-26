@@ -1,8 +1,0 @@
-#ifdef __OBJC__
-#import <UIKit/UIKit.h>
-#endif
-
-
-FOUNDATION_EXPORT double Pods_DGGridCollectionViewControllerTests_DGGridCollectionViewControllerTests_tvOSVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_DGGridCollectionViewControllerTests_DGGridCollectionViewControllerTests_tvOSVersionString[];
-

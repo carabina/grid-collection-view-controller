@@ -1,7 +1,7 @@
 workspace 'DGGridCollectionViewController.xcworkspace'
 
 ## Framework targets
-abstract_target "DGGridCollectionViewController" do
+abstract_target "Frameworks" do
 	use_frameworks!
 
 	target 'DGGridCollectionViewController-iOS' do
@@ -14,7 +14,7 @@ abstract_target "DGGridCollectionViewController" do
 end
 
 ## Tests targets
-abstract_target "DGGridCollectionViewControllerTests" do
+abstract_target "Tests" do
 	use_frameworks!
 
 	target 'DGGridCollectionViewControllerTests-iOS' do
@@ -27,7 +27,7 @@ abstract_target "DGGridCollectionViewControllerTests" do
 end
 
 ## Samples targets
-abstract_target "DGGridCollectionViewControllerSample" do
+abstract_target "Samples" do
 	use_frameworks!
 
 	target 'DGGridCollectionViewControllerSample-iOS' do

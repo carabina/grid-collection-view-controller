@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_DGGridCollectionViewControllerTests_DGGridCollectionViewControllerTests_iOS : NSObject
-@end
-@implementation PodsDummy_Pods_DGGridCollectionViewControllerTests_DGGridCollectionViewControllerTests_iOS
-@end
