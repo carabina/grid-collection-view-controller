@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44972032553381906690AEE1 /* Pods_Samples_DGGridCollectionViewControllerSample_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA723EF4BAC62CCE1A38D8C /* Pods_Samples_DGGridCollectionViewControllerSample_iOS.framework */; };
+		A30D63F21E0D717E00A3CE45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D63F11E0D717E00A3CE45 /* AppDelegate.swift */; };
+		A30D63F91E0D717E00A3CE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30D63F81E0D717E00A3CE45 /* Assets.xcassets */; };
+		A30D63FC1E0D717E00A3CE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30D63FA1E0D717E00A3CE45 /* LaunchScreen.storyboard */; };
+		A30D640A1E0D71CB00A3CE45 /* DGGridCollectionViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30D64091E0D71CB00A3CE45 /* DGGridCollectionViewController.framework */; };
+		A30D640B1E0D71CB00A3CE45 /* DGGridCollectionViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A30D64091E0D71CB00A3CE45 /* DGGridCollectionViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE2E4F781E11263D002DB2F2 /* LoadingItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2E4F721E11263D002DB2F2 /* LoadingItemCell.swift */; };
+		AE2E4F791E11263D002DB2F2 /* LoadingItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE2E4F731E11263D002DB2F2 /* LoadingItemCell.xib */; };
+		AE2E4F7A1E11263D002DB2F2 /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2E4F741E11263D002DB2F2 /* SimpleViewController.swift */; };
+		AE2E4F7B1E11263D002DB2F2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2E4F751E11263D002DB2F2 /* User.swift */; };
+		AE2E4F7C1E11263D002DB2F2 /* UserItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2E4F761E11263D002DB2F2 /* UserItemCell.swift */; };
+		AE2E4F7D1E11263D002DB2F2 /* UserItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE2E4F771E11263D002DB2F2 /* UserItemCell.xib */; };
+		AE2E4F821E112676002DB2F2 /* SimpleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE2E4F811E112676002DB2F2 /* SimpleViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A30D640C1E0D71CB00A3CE45 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A30D640B1E0D71CB00A3CE45 /* DGGridCollectionViewController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1241E3F2D0AA7F36952D856F /* Pods-Samples-DGGridCollectionViewControllerSample-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Samples-DGGridCollectionViewControllerSample-iOS.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Samples-DGGridCollectionViewControllerSample-iOS/Pods-Samples-DGGridCollectionViewControllerSample-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		41547DC2F02F11F432F03CBF /* Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-iOS.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-iOS/Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		465646586A414E17162D185D /* Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-iOS.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-iOS/Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		846FE99F4361DD69C14E72CB /* Pods_DGGridCollectionViewControllerSample_DGGridCollectionViewControllerSample_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DGGridCollectionViewControllerSample_DGGridCollectionViewControllerSample_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA723EF4BAC62CCE1A38D8C /* Pods_Samples_DGGridCollectionViewControllerSample_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Samples_DGGridCollectionViewControllerSample_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30D63EE1E0D717E00A3CE45 /* DGGridCollectionViewControllerSample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DGGridCollectionViewControllerSample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30D63F11E0D717E00A3CE45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A30D63F81E0D717E00A3CE45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A30D63FB1E0D717E00A3CE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A30D63FD1E0D717E00A3CE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30D64091E0D71CB00A3CE45 /* DGGridCollectionViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DGGridCollectionViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2E4F721E11263D002DB2F2 /* LoadingItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingItemCell.swift; sourceTree = "<group>"; };
+		AE2E4F731E11263D002DB2F2 /* LoadingItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingItemCell.xib; sourceTree = "<group>"; };
+		AE2E4F741E11263D002DB2F2 /* SimpleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
+		AE2E4F751E11263D002DB2F2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AE2E4F761E11263D002DB2F2 /* UserItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserItemCell.swift; sourceTree = "<group>"; };
+		AE2E4F771E11263D002DB2F2 /* UserItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserItemCell.xib; sourceTree = "<group>"; };
+		AE2E4F811E112676002DB2F2 /* SimpleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleViewController.xib; sourceTree = "<group>"; };
+		D36687FFCBDB5143A409C02D /* Pods-Samples-DGGridCollectionViewControllerSample-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Samples-DGGridCollectionViewControllerSample-iOS.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-Samples-DGGridCollectionViewControllerSample-iOS/Pods-Samples-DGGridCollectionViewControllerSample-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30D63EB1E0D717E00A3CE45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30D640A1E0D71CB00A3CE45 /* DGGridCollectionViewController.framework in Frameworks */,
+				44972032553381906690AEE1 /* Pods_Samples_DGGridCollectionViewControllerSample_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A30D63E51E0D717E00A3CE45 = {
+			isa = PBXGroup;
+			children = (
+				A30D63F01E0D717E00A3CE45 /* DGGridCollectionViewControllerSample-iOS */,
+				A30D64111E0D745C00A3CE45 /* Frameworks */,
+				A30D63EF1E0D717E00A3CE45 /* Products */,
+				B8FF5AA30A09A2E69BAC9EB0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A30D63EF1E0D717E00A3CE45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A30D63EE1E0D717E00A3CE45 /* DGGridCollectionViewControllerSample-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A30D63F01E0D717E00A3CE45 /* DGGridCollectionViewControllerSample-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE2E4F801E112664002DB2F2 /* Controllers */,
+				AE2E4F7F1E112657002DB2F2 /* Models */,
+				AE2E4F7E1E112641002DB2F2 /* Components */,
+				A30D63F11E0D717E00A3CE45 /* AppDelegate.swift */,
+				A30D63F81E0D717E00A3CE45 /* Assets.xcassets */,
+				A30D63FA1E0D717E00A3CE45 /* LaunchScreen.storyboard */,
+				A30D63FD1E0D717E00A3CE45 /* Info.plist */,
+			);
+			path = "DGGridCollectionViewControllerSample-iOS";
+			sourceTree = "<group>";
+		};
+		A30D64111E0D745C00A3CE45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A30D64091E0D71CB00A3CE45 /* DGGridCollectionViewController.framework */,
+				846FE99F4361DD69C14E72CB /* Pods_DGGridCollectionViewControllerSample_DGGridCollectionViewControllerSample_iOS.framework */,
+				9DA723EF4BAC62CCE1A38D8C /* Pods_Samples_DGGridCollectionViewControllerSample_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE2E4F7E1E112641002DB2F2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AE2E4F761E11263D002DB2F2 /* UserItemCell.swift */,
+				AE2E4F771E11263D002DB2F2 /* UserItemCell.xib */,
+				AE2E4F721E11263D002DB2F2 /* LoadingItemCell.swift */,
+				AE2E4F731E11263D002DB2F2 /* LoadingItemCell.xib */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		AE2E4F7F1E112657002DB2F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE2E4F751E11263D002DB2F2 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AE2E4F801E112664002DB2F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE2E4F741E11263D002DB2F2 /* SimpleViewController.swift */,
+				AE2E4F811E112676002DB2F2 /* SimpleViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B8FF5AA30A09A2E69BAC9EB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				465646586A414E17162D185D /* Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-iOS.debug.xcconfig */,
+				41547DC2F02F11F432F03CBF /* Pods-DGGridCollectionViewControllerSample-DGGridCollectionViewControllerSample-iOS.release.xcconfig */,
+				D36687FFCBDB5143A409C02D /* Pods-Samples-DGGridCollectionViewControllerSample-iOS.debug.xcconfig */,
+				1241E3F2D0AA7F36952D856F /* Pods-Samples-DGGridCollectionViewControllerSample-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A30D63ED1E0D717E00A3CE45 /* DGGridCollectionViewControllerSample-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A30D64001E0D717E00A3CE45 /* Build configuration list for PBXNativeTarget "DGGridCollectionViewControllerSample-iOS" */;
+			buildPhases = (
+				986B8F2F5A04B5574D6124D9 /* [CP] Check Pods Manifest.lock */,
+				A30D63EA1E0D717E00A3CE45 /* Sources */,
+				A30D63EB1E0D717E00A3CE45 /* Frameworks */,
+				A30D63EC1E0D717E00A3CE45 /* Resources */,
+				A30D640C1E0D71CB00A3CE45 /* Embed Frameworks */,
+				761B88D2861272099C580E2F /* [CP] Embed Pods Frameworks */,
+				76DBEC950C1A9D8FAF847D21 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DGGridCollectionViewControllerSample-iOS";
+			productName = "DGGridCollectionViewControllerSample-iOS";
+			productReference = A30D63EE1E0D717E00A3CE45 /* DGGridCollectionViewControllerSample-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A30D63E61E0D717E00A3CE45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Digipolitan;
+				TargetAttributes = {
+					A30D63ED1E0D717E00A3CE45 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 582762VK3P;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A30D63E91E0D717E00A3CE45 /* Build configuration list for PBXProject "DGGridCollectionViewControllerSample-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A30D63E51E0D717E00A3CE45;
+			productRefGroup = A30D63EF1E0D717E00A3CE45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A30D63ED1E0D717E00A3CE45 /* DGGridCollectionViewControllerSample-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A30D63EC1E0D717E00A3CE45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30D63FC1E0D717E00A3CE45 /* LaunchScreen.storyboard in Resources */,
+				AE2E4F791E11263D002DB2F2 /* LoadingItemCell.xib in Resources */,
+				AE2E4F821E112676002DB2F2 /* SimpleViewController.xib in Resources */,
+				A30D63F91E0D717E00A3CE45 /* Assets.xcassets in Resources */,
+				AE2E4F7D1E11263D002DB2F2 /* UserItemCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		761B88D2861272099C580E2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-Samples-DGGridCollectionViewControllerSample-iOS/Pods-Samples-DGGridCollectionViewControllerSample-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76DBEC950C1A9D8FAF847D21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-Samples-DGGridCollectionViewControllerSample-iOS/Pods-Samples-DGGridCollectionViewControllerSample-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		986B8F2F5A04B5574D6124D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A30D63EA1E0D717E00A3CE45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2E4F7B1E11263D002DB2F2 /* User.swift in Sources */,
+				A30D63F21E0D717E00A3CE45 /* AppDelegate.swift in Sources */,
+				AE2E4F781E11263D002DB2F2 /* LoadingItemCell.swift in Sources */,
+				AE2E4F7C1E11263D002DB2F2 /* UserItemCell.swift in Sources */,
+				AE2E4F7A1E11263D002DB2F2 /* SimpleViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A30D63FA1E0D717E00A3CE45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A30D63FB1E0D717E00A3CE45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A30D63FE1E0D717E00A3CE45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		A30D63FF1E0D717E00A3CE45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		A30D64011E0D717E00A3CE45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D36687FFCBDB5143A409C02D /* Pods-Samples-DGGridCollectionViewControllerSample-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 582762VK3P;
+				INFOPLIST_FILE = "DGGridCollectionViewControllerSample-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digipolitan.DGGridCollectionViewControllerSample-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A30D64021E0D717E00A3CE45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1241E3F2D0AA7F36952D856F /* Pods-Samples-DGGridCollectionViewControllerSample-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 582762VK3P;
+				INFOPLIST_FILE = "DGGridCollectionViewControllerSample-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digipolitan.DGGridCollectionViewControllerSample-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A30D63E91E0D717E00A3CE45 /* Build configuration list for PBXProject "DGGridCollectionViewControllerSample-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30D63FE1E0D717E00A3CE45 /* Debug */,
+				A30D63FF1E0D717E00A3CE45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A30D64001E0D717E00A3CE45 /* Build configuration list for PBXNativeTarget "DGGridCollectionViewControllerSample-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30D64011E0D717E00A3CE45 /* Debug */,
+				A30D64021E0D717E00A3CE45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A30D63E61E0D717E00A3CE45 /* Project object */;
+}
