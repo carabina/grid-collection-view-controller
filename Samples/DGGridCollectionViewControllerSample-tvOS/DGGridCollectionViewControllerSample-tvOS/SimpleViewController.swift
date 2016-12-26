@@ -28,12 +28,6 @@ class SimpleViewController: UIViewController {
 		self.collectionController.collectionView?.backgroundColor = UIColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0)
 		self.view.addSubview(self.collectionController.view)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-	
 }
 
 extension  SimpleViewController: DGGridCollectionViewControllerDataSource, DGGridCollectionViewControllerDelegate {
