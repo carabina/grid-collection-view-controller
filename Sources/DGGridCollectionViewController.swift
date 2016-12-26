@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol GridCollectionViewControllerDelegate: UICollectionViewDelegateFlowLayout {
+public protocol DGGridCollectionViewControllerDelegate: UICollectionViewDelegateFlowLayout {
 	/**
 	Must Returns the size of the loading Cell
 	**/
@@ -31,7 +31,7 @@ public protocol GridCollectionViewControllerDelegate: UICollectionViewDelegateFl
 	func numberOfItemPerRow(_ collectionView: UICollectionView) -> CGFloat
 }
 
-public protocol GridCollectionViewControllerDataSource: UICollectionViewDataSource {
+public protocol DGGridCollectionViewControllerDataSource: UICollectionViewDataSource {
 	/**
 	Return the number of items that will be displayed before reloading
 	**/
@@ -45,18 +45,18 @@ public protocol GridCollectionViewControllerDataSource: UICollectionViewDataSour
 	/**
 	Return the loading cell that will be displayed when the user will reach the end of the streal
 	**/
-	func controller(_ controller: GridCollectionViewController, loadingCellAt indexPath: IndexPath) -> UICollectionViewCell
+	func controller(_ controller: DGGridCollectionViewController, loadingCellAt indexPath: IndexPath) -> UICollectionViewCell
 }
 
-open class GridCollectionViewController: UICollectionViewController {
+open class DGGridCollectionViewController: UICollectionViewController {
 	public fileprivate(set) var loading  = true
 	public fileprivate(set) var fetching = false
 
 	fileprivate var collectionViewDelegateProxy: CollectionViewDelegateProxy
 	fileprivate var collectionViewDataSourceProxy: CollectionViewDataSourceProxy
 
-	fileprivate weak var _delegate: GridCollectionViewControllerDelegate?
-	fileprivate weak var _dataSource: GridCollectionViewControllerDataSource?
+	fileprivate weak var _delegate: DGGridCollectionViewControllerDelegate?
+	fileprivate weak var _dataSource: DGGridCollectionViewControllerDataSource?
 
 	private var _paginationEnabled: Bool = false
 	public var paginationEnabled: Bool {
@@ -69,7 +69,7 @@ open class GridCollectionViewController: UICollectionViewController {
 		}
 	}
 
-	public weak var delegate: GridCollectionViewControllerDelegate? {
+	public weak var delegate: DGGridCollectionViewControllerDelegate? {
 		get {
 			return self._delegate
 		}
@@ -79,7 +79,7 @@ open class GridCollectionViewController: UICollectionViewController {
 		}
 	}
 
-	public weak var dataSource: GridCollectionViewControllerDataSource? {
+	public weak var dataSource: DGGridCollectionViewControllerDataSource? {
 		get {
 			return self._dataSource
 		}
@@ -130,7 +130,7 @@ open class GridCollectionViewController: UICollectionViewController {
 }
 
 private class CollectionViewDataSourceProxy: NSObject, UICollectionViewDataSource {
-	weak var collectionController: GridCollectionViewController!
+	weak var collectionController: DGGridCollectionViewController!
 
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		let count =  self.collectionController.dataSource?.collectionView(collectionView, numberOfItemsInSection: section) ?? 0
@@ -184,7 +184,7 @@ private class CollectionViewDataSourceProxy: NSObject, UICollectionViewDataSourc
 }
 
 private class CollectionViewDelegateProxy: NSObject, UICollectionViewDelegateFlowLayout {
-	weak var collectionController: GridCollectionViewController!
+	weak var collectionController: DGGridCollectionViewController!
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		let count =  self.collectionController.dataSource?.collectionView(collectionView, numberOfItemsInSection: indexPath.section) ?? 0

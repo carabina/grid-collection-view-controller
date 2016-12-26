@@ -21,12 +21,12 @@
 		A38EF2CA1DECF97000637484 /* GridCollectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38EF2C71DECF97000637484 /* GridCollectionViewControllerTests.swift */; };
 		A38EF2CB1DECF97000637484 /* GridCollectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38EF2C71DECF97000637484 /* GridCollectionViewControllerTests.swift */; };
 		A38EF2CC1DECF97000637484 /* GridCollectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38EF2C71DECF97000637484 /* GridCollectionViewControllerTests.swift */; };
-		AEB674321E0C1D950033A239 /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB674311E0C1D950033A239 /* GridCollectionViewController.swift */; };
-		AEB674331E0C1D950033A239 /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB674311E0C1D950033A239 /* GridCollectionViewController.swift */; };
-		AEB674381E0C25750033A239 /* CenterAlignedFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB674361E0C25750033A239 /* CenterAlignedFlowLayout.swift */; };
-		AEB674391E0C25750033A239 /* CenterAlignedFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB674361E0C25750033A239 /* CenterAlignedFlowLayout.swift */; };
-		AEB6743A1E0C25750033A239 /* LeftAlignedFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB674371E0C25750033A239 /* LeftAlignedFlowLayout.swift */; };
-		AEB6743B1E0C25750033A239 /* LeftAlignedFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB674371E0C25750033A239 /* LeftAlignedFlowLayout.swift */; };
+		AEB674321E0C1D950033A239 /* DGGridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB674311E0C1D950033A239 /* DGGridCollectionViewController.swift */; };
+		AEB674331E0C1D950033A239 /* DGGridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB674311E0C1D950033A239 /* DGGridCollectionViewController.swift */; };
+		AEB674381E0C25750033A239 /* DGCenterAlignedFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB674361E0C25750033A239 /* DGCenterAlignedFlowLayout.swift */; };
+		AEB674391E0C25750033A239 /* DGCenterAlignedFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB674361E0C25750033A239 /* DGCenterAlignedFlowLayout.swift */; };
+		AEB6743A1E0C25750033A239 /* DGLeftAlignedFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB674371E0C25750033A239 /* DGLeftAlignedFlowLayout.swift */; };
+		AEB6743B1E0C25750033A239 /* DGLeftAlignedFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB674371E0C25750033A239 /* DGLeftAlignedFlowLayout.swift */; };
 		AEB674821E0C2EB40033A239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB674741E0C2E780033A239 /* AppDelegate.swift */; };
 		AEB674831E0C2EBC0033A239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB674701E0C2E780033A239 /* LaunchScreen.storyboard */; };
 		AEB674841E0C2EBC0033A239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB674721E0C2E780033A239 /* Main.storyboard */; };
@@ -106,9 +106,9 @@
 		A3169E751DE083D900BABAFD /* GridCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridCollectionViewController.h; sourceTree = "<group>"; };
 		A38EF2C71DECF97000637484 /* GridCollectionViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCollectionViewControllerTests.swift; sourceTree = "<group>"; };
 		A8901E6EC51FB445A6A14D34 /* Pods-GridCollectionViewController-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridCollectionViewController-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GridCollectionViewController-tvOS/Pods-GridCollectionViewController-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		AEB674311E0C1D950033A239 /* GridCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCollectionViewController.swift; sourceTree = "<group>"; };
-		AEB674361E0C25750033A239 /* CenterAlignedFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterAlignedFlowLayout.swift; sourceTree = "<group>"; };
-		AEB674371E0C25750033A239 /* LeftAlignedFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftAlignedFlowLayout.swift; sourceTree = "<group>"; };
+		AEB674311E0C1D950033A239 /* DGGridCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGGridCollectionViewController.swift; sourceTree = "<group>"; };
+		AEB674361E0C25750033A239 /* DGCenterAlignedFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGCenterAlignedFlowLayout.swift; sourceTree = "<group>"; };
+		AEB674371E0C25750033A239 /* DGLeftAlignedFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGLeftAlignedFlowLayout.swift; sourceTree = "<group>"; };
 		AEB6743D1E0C25EE0033A239 /* SimpleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
 		AEB6743E1E0C25EE0033A239 /* UserItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserItemCell.xib; sourceTree = "<group>"; };
 		AEB674401E0C25EE0033A239 /* LoadingItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingItemCell.swift; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				AEB674351E0C254C0033A239 /* Layouts */,
-				AEB674311E0C1D950033A239 /* GridCollectionViewController.swift */,
+				AEB674311E0C1D950033A239 /* DGGridCollectionViewController.swift */,
 				A3169E751DE083D900BABAFD /* GridCollectionViewController.h */,
 				A3169DCC1DE0629100BABAFD /* Info.plist */,
 			);
@@ -254,8 +254,8 @@
 		AEB674351E0C254C0033A239 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
-				AEB674361E0C25750033A239 /* CenterAlignedFlowLayout.swift */,
-				AEB674371E0C25750033A239 /* LeftAlignedFlowLayout.swift */,
+				AEB674361E0C25750033A239 /* DGCenterAlignedFlowLayout.swift */,
+				AEB674371E0C25750033A239 /* DGLeftAlignedFlowLayout.swift */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -865,9 +865,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEB6743A1E0C25750033A239 /* LeftAlignedFlowLayout.swift in Sources */,
-				AEB674321E0C1D950033A239 /* GridCollectionViewController.swift in Sources */,
-				AEB674381E0C25750033A239 /* CenterAlignedFlowLayout.swift in Sources */,
+				AEB6743A1E0C25750033A239 /* DGLeftAlignedFlowLayout.swift in Sources */,
+				AEB674321E0C1D950033A239 /* DGGridCollectionViewController.swift in Sources */,
+				AEB674381E0C25750033A239 /* DGCenterAlignedFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -890,9 +890,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEB6743B1E0C25750033A239 /* LeftAlignedFlowLayout.swift in Sources */,
-				AEB674331E0C1D950033A239 /* GridCollectionViewController.swift in Sources */,
-				AEB674391E0C25750033A239 /* CenterAlignedFlowLayout.swift in Sources */,
+				AEB6743B1E0C25750033A239 /* DGLeftAlignedFlowLayout.swift in Sources */,
+				AEB674331E0C1D950033A239 /* DGGridCollectionViewController.swift in Sources */,
+				AEB674391E0C25750033A239 /* DGCenterAlignedFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1457,6 +1457,7 @@
 				AEB6746D1E0C2DE30033A239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

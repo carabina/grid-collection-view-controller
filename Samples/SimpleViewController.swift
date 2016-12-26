@@ -10,7 +10,7 @@ import UIKit
 import GridCollectionViewController
 
 class SimpleViewController: UIViewController {
-	var collectionController: GridCollectionViewController!
+	var collectionController: DGGridCollectionViewController!
 	var data: [String: [User]] = ["users": []]
 
     override func viewDidLoad() {
@@ -18,7 +18,7 @@ class SimpleViewController: UIViewController {
 		self.title = "Demo"
 		NotificationCenter.default.addObserver(self, selector: #selector(self.deviceRotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
 
-		self.collectionController = GridCollectionViewController()
+		self.collectionController = DGGridCollectionViewController()
 		self.collectionController.register(UINib(nibName:String(describing:LoadingItemCell.self), bundle: Bundle.main), forCellWithReuseIdentifier: LoadingItemCell.Identifier)
 		self.collectionController.register(UINib(nibName:String(describing:UserItemCell.self), bundle: Bundle.main), forCellWithReuseIdentifier: UserItemCell.Identifier)
 		self.collectionController.setCollectionViewLayout(CenterAlignedFlowLayout(), animated: true)
@@ -33,13 +33,13 @@ class SimpleViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+	
 	func deviceRotated() {
 		self.collectionController.collectionView?.reloadData()
 	}
 }
 
-extension  SimpleViewController: GridCollectionViewControllerDataSource, GridCollectionViewControllerDelegate {
+extension  SimpleViewController: DGGridCollectionViewControllerDataSource, DGGridCollectionViewControllerDelegate {
 	// MARK: Flow Layout
 	// Flow layout delegate
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -94,7 +94,7 @@ extension  SimpleViewController: GridCollectionViewControllerDataSource, GridCol
 		return self.data.keys.count
 	}
 
-	func controller(_ controller: GridCollectionViewController, loadingCellAt indexPath: IndexPath) -> UICollectionViewCell {
+	func controller(_ controller: DGGridCollectionViewController, loadingCellAt indexPath: IndexPath) -> UICollectionViewCell {
 		if let cell: LoadingItemCell = controller.collectionView!.dequeueReusableCell(withReuseIdentifier: LoadingItemCell.Identifier, for: indexPath) as? LoadingItemCell {
 			cell.set(loading: controller.loading)
 			return cell
