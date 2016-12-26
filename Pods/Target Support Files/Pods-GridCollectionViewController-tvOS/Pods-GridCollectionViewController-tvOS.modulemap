@@ -1,6 +1,0 @@
-framework module Pods_GridCollectionViewController_tvOS {
-  umbrella header "Pods-GridCollectionViewController-tvOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

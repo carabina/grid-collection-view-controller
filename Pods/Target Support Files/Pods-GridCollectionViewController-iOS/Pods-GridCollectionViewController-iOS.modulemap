@@ -1,6 +1,0 @@
-framework module Pods_GridCollectionViewController_iOS {
-  umbrella header "Pods-GridCollectionViewController-iOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

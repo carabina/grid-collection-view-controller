@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_DGGridCollectionViewController_DGGridCollectionViewController_tvOS : NSObject
+@end
+@implementation PodsDummy_Pods_DGGridCollectionViewController_DGGridCollectionViewController_tvOS
+@end

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:DGGridCollectionViewController.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Samples/DGGridCollectionViewControllerSample-iOS/DGGridCollectionViewControllerSample-iOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Samples/DGGridCollectionViewControllerSample-tvOS/DGGridCollectionViewControllerSample-tvOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
