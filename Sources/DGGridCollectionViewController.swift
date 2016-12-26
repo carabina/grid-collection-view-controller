@@ -255,7 +255,7 @@ private class CollectionViewDelegateProxy: NSObject, UICollectionViewDelegateFlo
 		if self.collectionController.responds(to: aSelector) {
 			return self.collectionController
 		}
-		
-		return nil
+
+        return nil
 	}
 }
