@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 s.name         = "DGGridCollectionViewController"
 s.version      = "1.0.1"
-s.summary      = "Component that allows you to display collection of data in different format easily. It can have the form of a TableView of a CollectionView. It provides you different kind of layout and an extra mode allowing you to paginate your collection."
+s.summary      = "Component that allows you to display collection of data in different format easily."
  s.homepage     = "https://github.com/Digipolitan/grid-collection-view-controller.git"
 s.license      = { :type => "BSD", :file => "LICENSE" }
 s.author       = { "Digipolitan" => "contact@digipolitan.com" }
